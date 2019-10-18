@@ -7,6 +7,7 @@ import { JhipsterBoardTest1CoreModule } from 'app/core/core.module';
 import { JhipsterBoardTest1AppRoutingModule } from './app-routing.module';
 import { JhipsterBoardTest1HomeModule } from './home/home.module';
 import { JhipsterBoardTest1EntityModule } from './entities/entity.module';
+import { JhipsterBoardTest1AppSinglePageModule } from './single-page/single-page.module';
 // jhipster-needle-angular-add-module-import JHipster will add new module here
 import { JhiMainComponent } from './layouts/main/main.component';
 import { NavbarComponent } from './layouts/navbar/navbar.component';
@@ -20,6 +21,7 @@ import { ErrorComponent } from './layouts/error/error.component';
     JhipsterBoardTest1SharedModule,
     JhipsterBoardTest1CoreModule,
     JhipsterBoardTest1HomeModule,
+    JhipsterBoardTest1AppSinglePageModule,
     // jhipster-needle-angular-add-module JHipster will add new module here
     JhipsterBoardTest1EntityModule,
     JhipsterBoardTest1AppRoutingModule
