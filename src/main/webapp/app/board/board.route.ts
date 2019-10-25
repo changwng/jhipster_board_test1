@@ -42,7 +42,7 @@ export const BOARD_ROUTE: Routes = [
       board: BoardResolve
     },
     data: {
-      pageTitle: 'Board Create/Update Page'
+      pageTitle: 'Board Create Page'
     }
   },
   {
@@ -53,6 +53,16 @@ export const BOARD_ROUTE: Routes = [
     },
     data: {
       pageTitle: 'Board Detail Page'
+    }
+  },
+  {
+    path: ':id/edit',
+    component: BoardUpdateComponent,
+    resolve: {
+      board: BoardResolve
+    },
+    data: {
+      pageTitle: 'Board Update Page'
     }
   }
 ];
