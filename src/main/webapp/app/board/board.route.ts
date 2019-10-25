@@ -8,6 +8,7 @@ import { filter, map } from 'rxjs/operators';
 import { HttpResponse } from '@angular/common/http';
 import { IBoard, Board } from 'app/shared/model/board.model';
 import { BoardService } from 'app/board/board.service';
+import { BoardDetailComponent } from 'app/board/board-detail.component';
 
 @Injectable({ providedIn: 'root' })
 export class BoardResolve implements Resolve<IBoard> {
@@ -42,6 +43,16 @@ export const BOARD_ROUTE: Routes = [
     },
     data: {
       pageTitle: 'Board Create/Update Page'
+    }
+  },
+  {
+    path: ':id/view',
+    component: BoardDetailComponent,
+    resolve: {
+      board: BoardResolve
+    },
+    data: {
+      pageTitle: 'Board Detail Page'
     }
   }
 ];
