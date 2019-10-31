@@ -61,6 +61,12 @@
                             <span>Board 2</span>
                         </a>
                     </li>
+                    <li>
+                        <a class="dropdown-item" routerLink="board-3" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }" (click)="collapseNavbar()">
+                            <fa-icon icon="asterisk" fixedWidth="true"></fa-icon>
+                            <span>Board 3</span>
+                        </a>
+                    </li>
                     <!-- jhipster-needle-add-entity-to-menu - JHipster will add entities to the menu here -->
                 </ul>
             </li>

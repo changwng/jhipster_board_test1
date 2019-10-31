@@ -17,6 +17,7 @@
     <include file="config/liquibase/changelog/20191017121254_added_entity_Book.xml" relativeToChangelogFile="false"/>
     <include file="config/liquibase/changelog/20191023130200_custom_board.xml" relativeToChangelogFile="false"/>
     <include file="config/liquibase/changelog/20191025034233_added_entity_Board2.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20191025034703_added_entity_Board3.xml" relativeToChangelogFile="false"/>
     <!-- jhipster-needle-liquibase-add-changelog - JHipster will add liquibase changelogs here -->
     <!-- jhipster-needle-liquibase-add-constraints-changelog - JHipster will add liquibase constraints changelogs here -->
 </databaseChangeLog>
